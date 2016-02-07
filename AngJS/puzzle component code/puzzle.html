@@ -1,0 +1,4 @@
+<div class="row" ng-repeat="rows in puzzle.puzzle">
+    <img class="col-xs-6 col-md-6 puzzle" ng-repeat="piece in rows.row" ng-src=img/puzzle/puzzle{{piece.id}}.jpg ng-click="puzzle.rotatePic(piece)"
+         ng-style="{'transform': 'rotate('+piece.deg+'deg)'}">
+</div>
